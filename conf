@@ -1,0 +1,1325 @@
+{
+    "footerDescription": "[right][b]Wygenerowano przez: [color=blue]@Automatic[/color][/right]",
+
+    "license": {
+        "id": 32
+    },
+
+    "mysql": {
+        "host": "127.0.0.1",
+        "user": "",
+        "password": "",
+        "database": "Automatic"
+    },
+
+    "1": {
+        "ts3": {
+            "host": "ts3.uoszukisty.pl", 
+            "queryport": 10011,
+            "serverport": 9987,
+            "username": "serveradmin",
+            "password": "TwojaStara123",
+            "nickname": "Automatic",
+            "keepAlive": true,
+            "channelId": 1
+        },
+
+        "functions": {
+            "partners": {
+                "status": false,
+                "interval": 25000,
+                "mysql": false,
+                "mode": "interval",
+                "channelid": 120,
+                "partner": [
+                    "[cspacer]Â·Â» PARTNERZY: Bahu.pro Â«Â·",
+					"[cspacer]Â·Â» PARTNERZY: GetMusicBot.com Â«Â·",
+					"[cspacer]Â·Â» PARTNERZY: Lbots.pl Â«Â·"
+					
+                ]
+            },
+            "multiFunction": {
+                "status": true,
+                "interval": 3000, 
+                "mysql": false,
+                "mode": "interval",
+                "function": {
+                    "channelDate": {
+                        "status": true,
+                        "channelid": 7,
+                        "channelName": "[cspacer]Â·Â» GODZINA: [HOUR] Â«Â·"
+                    },
+                    "channelOnline": {
+                        "status": true,
+                        "channelid": 4,
+                        "ignoredGroups": [],
+                        "channelName": "[cspacer]Â·Â» Osďż˝b online: [ONLINE] Â«Â·"
+                    },
+                    "channelPing": {
+                        "status": false,
+                        "channelid": 154,
+                        "channelName": "[cspacer]â€˘ Ĺšredni ping: [PING]"
+                    },
+                    "channelPackets": {
+                        "status": false,
+                        "channelid": 2816,
+                        "channelName": "[cspacer]â€˘ PacketLoss: [PACKETS]%"
+                    },
+                    "channelsCount": {
+                        "status": true,
+                        "channelid": 8,
+                        "channelName": "[cspacer]â€˘ Wszystkich KanaĹ‚Ăłw: [CHANNELS]"
+                    },
+                    "channelVisits": {
+                        "status": false,
+                        "channelid": 1003,
+                        "channelName": "[cspacer]Â·Â» ODWIEDZIN: [VISITS] Â«Â·"
+                    },
+                    "channelUptime": {
+                        "status": false,
+                        "channelid": 2820,
+                        "channelName": "â€˘ Uptime: [UPTIME]"
+                    },
+                    "hostMessage": {
+                        "status": true,
+                        "ignoredGroups": [],
+                        "message": "Witaj na serwerze [b]TS3.uoszukisty.pl[/b]\nUĹĽytkownikĂłw online: [b][ONLINE][/b]/[b][MAX][/b]\nNasz serwer pracuje od: [b][UPTIME][/b]"
+                    }
+                }
+            },
+            "queryWhitelist": {
+                "status": false, 
+                "mysql": false,
+                "mode": "onQueryJoin",
+                "allowedIps": ["51.38.137.104"],
+                "groupToMsgSent": [9,215]
+            },
+            "countryList": {
+                "status": false,
+                "interval": 3000,
+                "mysql": false,
+                "mode": "interval",
+                "ignoredGroups": [],
+                "channelId": 37651,
+                "channelName": "Osoby spoza Polski: [USERS]"
+            },
+            "countDown": {
+                "status": false,
+                "interval": 60000,
+                "mysql": false,
+                "mode": "interval",
+                "channels": {
+                    "1201": {
+                        "channelName": "Do koĹ„ca wakacji: [DAYS] dni [HOURS] godz [MINUTES] min",
+                        "expiredChannelName": "Wakacje siÄ™ skoĹ„czyĹ‚y ;(",
+                        "date": "2019-09-01"
+                    }
+                }
+            },
+            "queryOnline": {
+                "status": false,
+                "interval": 120000,
+                "mysql": false,
+                "mode": "interval",
+                "channelId": 216,
+                "channelName": "Â» BotĂłw Query Online: [COUNT]"
+            },
+            "getMcServerData": {
+                "status": false,
+                "interval": 15000,
+                "mysql": false,
+                "mode": "interval",
+                "servers": {
+                    "onlypvp.pl": {
+                        "port": 9987,
+                        "channelId": 1211,
+                        "channelName": "OnlyPVP.pl - [ONLINE]/[MAX]",
+                        "channelDesc": "[center][hr][size=12][b]OnlyPvP.pl[/b][/size][hr]\n\n[size=9][b]MOTD serwera OnlyPvP.pl:[/b][/size]\n[color=darkcyan][b]\n[MOTD][/b][/color]\n\n[hr]"
+                    },
+                    "hypixel.net": {
+                        "port": 9987,
+                        "channelId": 1212,
+                        "channelName": "HyPixel.net - [ONLINE]/[MAX]",
+                        "channelDesc": "[center][hr][size=12][b]HyPixel.net[/b][/size][hr]\n\n[size=9][b]MOTD serwera HyPixel.net:[/b][/size]\n[color=darkcyan][b]\n[MOTD][/b][/color]\n\n[hr]"
+                    },
+                    "vertez.pl": {
+                        "port": 9987,
+                        "channelId": 1213,
+                        "channelName": "Vertez.pl - [ONLINE]/[MAX]",
+                        "channelDesc": "[center][hr][size=12][b]Vertez.pl[/b][/size][hr]\n\n[size=9][b]MOTD serwera Vertez.pl:[/b][/size]\n[color=darkcyan][b]\n[MOTD][/b][/color]\n\n[hr]"
+                    },
+                    "hiplay.pl": {
+                        "port": 9987,
+                        "channelId": 1214,
+                        "channelName": "HiPlay.pl - [ONLINE]/[MAX]",
+                        "channelDesc": "[center][hr][size=12][b]HiPlay.pl[/b][/size][hr]\n\n[size=9][b]MOTD serwera HiPlay.pl:[/b][/size]\n[color=darkcyan][b]\n[MOTD][/b][/color]\n\n[hr]"
+                    }
+    
+                }
+            },
+            "userOnChannel": {
+                "status": false,
+                "interval": 1000,
+                "mysql": false,
+                "mode": "interval",
+                "users": {
+                    "235": { 
+                        "channelId": 637,
+                        "rank": "Menager",
+                        "channelName": "Ă— [ Menager ] [NICK] - [STATUS]"
+                    },
+					"12": {
+                        "channelId": 49,
+                        "rank": "CEO",
+                        "channelName": "Ă— [ CEO ] [NICK] - [STATUS]"
+                    },
+					"57": {
+                        "channelId": 602,
+                        "rank": "Menager",
+                        "channelName": "Ă— [ Menager ] [NICK] - [STATUS]"
+                    },
+					"11": {
+                        "channelId": 173,
+                        "rank": "Query",
+                        "channelName": "Ă— [ Query ] [NICK] - [STATUS]"
+                    },
+					"52": {
+                        "channelId": 204,
+                        "rank": "NA",
+                        "channelName": "Ă— [ NA ] [NICK] - [STATUS]"
+                    },
+					"313": {
+                        "channelId": 651,
+                        "rank": "ADMIN",
+                        "channelName": "Ă— [ ADMIN ] [NICK] - [STATUS]"
+                    },
+					"43": {
+                        "channelId": 53,
+                        "rank": "HA",
+                        "channelName": "Ă— [ HA ] [NICK] - [STATUS]"
+                    },
+					"9": {
+                        "channelId": 642,
+                        "rank": "SSA",
+                        "channelName": "Ă— [ SSA ] [NICK] - [STATUS]"
+                    },
+					"135": {
+                        "channelId": 957,
+                        "rank": "NA",
+                        "channelName": "Ă— [ NA ] [NICK] - [STATUS]"
+                    },
+					"38": {
+                        "channelId": 175,
+                        "rank": "NA",
+                        "channelName": "Ă— [ NA ] [NICK] - [STATUS]"
+                    },
+					"8": {
+                        "channelId": 641,
+                        "rank": "HA",
+                        "channelName": "Ă— [ HA ] [NICK] - [STATUS]"
+                    }
+         
+
+                }
+            },
+            "adminsOnline": {
+                "status": false, 
+                "interval": 60000,
+                "mysql": false,
+                "mode": "interval",
+                "channelId": 200,
+                "channelName": "â–Ş AdministratorĂłw online: [ONLINE]",
+                "adminGroups": {
+                    "[b]  CEO  [/b]": 86,
+					"[b]  vCEO  [/b]": 155,
+					"[b]  MENAGER  [/b]": 215,
+					"[b]  QUERY  [/b]": 6,
+					"[b]  ROOT  [/b]": 88,
+					"[b]  HA  [/b]": 89,
+                    "[b]  SSA  [/b]": 90,
+					"[b]  SA  [/b]": 91,
+					"[b]  ADMIN  [/b]": 92,
+					"[b]  NA  [/b]": 94
+                }
+            },
+            "guildOnline": {
+                "status": false,
+                "mysql": true,
+                "interval": 3000,
+                "mode": "interval",
+                "generateStatusTime": true,
+                "dbChannelName": {
+                    "normalChannel": "[TAG] - Online [ONLINE]/[ALL]",
+                    "spacerChannel": "[cspacer[TAG]]Status online: [ONLINE]/[ALL]"
+                },
+                "channels": {
+                    
+                }
+            },
+            "adminList": {
+                "status": false, 
+                "interval": 60000,
+                "mysql": false,
+                "mode": "interval",
+                "channelId": 1004,
+                "adminGroups": {
+                    "[b]  CEO  [/b]": 86,
+					"[b]  vCEO  [/b]": 155,
+					"[b]  MENAGER  [/b]": 215,
+					"[b]  QUERY  [/b]": 6,
+					"[b]  ROOT  [/b]": 88,
+					"[b]  HA  [/b]": 89,
+                    "[b]  SSA  [/b]": 90,
+					"[b]  SA  [/b]": 91,
+					"[b]  ADMIN  [/b]": 92,
+					"[b]  NA  [/b]": 94
+                }
+            },
+            "banList": {
+                "status": false, 
+                "interval": 300000,
+                "mysql": false,
+                "mode": "interval",
+                "channelId": 252
+            },
+            "youtubeInfo": {
+                "status": false,
+                "interval": 10000,
+                "mysql": false,
+                "mode": "interval",
+                "youtubeDataAPI": "",
+                "channels": {
+                    "UCSeqSPSJDl0EXezzjJrwQNg": {
+                        "channelId": 5078,
+                        "channelName": "Subskrybcje: [SUBCOUNT]"
+                    },
+                    "UCwBtP6NDQtsP5YBa4vuZqHA": {
+                        "channelId": 5079,
+                        "channelName": "Subskrybcje: [SUBCOUNT]"
+                    }
+                }
+            },         
+            "onlyGroupJoin": {
+                "status": false,
+                "mysql": false,
+                "mode": "onClientMoved",
+                "allChannels": [7944],
+                "channels": {
+                    "7944": [13,1]
+                }
+            },
+            "detectClientPlatform": {
+                "status": false,
+                "mysql": false,
+                "mode": "onClientJoin",
+                "ignoredGroups": [20],
+                "allGroups": [14],
+                "groups": {
+                    "Android": 14
+                }
+            },
+            "monitorPublicChannels": {
+                "status": true,
+                "interval": 2500,
+                "mysql": false,
+                "mode": "interval",
+                "allZones": [27,28,29,26],
+                "zones": {
+                    "26": {
+                        "maxClients": "âž",
+                        "name": "Â» KanaĹ‚ Publiczny #[number]",
+                        "iconId": 0
+                    },
+                    "27": {
+                        "maxClients": "2",
+                        "name": "Â» KanaĹ‚ Publiczny #[number]",
+                        "iconId": 0
+                    },
+                    "28": {
+                        "maxClients": "3",
+                        "name": "Â» KanaĹ‚ Publiczny #[number]",
+                        "iconId": 0
+                    },
+                    "29": {
+                        "maxClients": "5",
+                        "name": "Â» KanaĹ‚ Publiczny #[number]",
+                        "iconId": 0
+                    }
+                }
+            },
+            "afkChecker": {
+                "status": false,
+                "interval": 3000,
+                "mysql": false,
+                "mode": "interval",
+                "afkTime": 1,
+                "afkChannelId": 973,
+                "ignoredGroups": [13, 31]
+            },
+            "autoRegister": {   
+                "status": true,
+                "interval": 10000,
+                "ignoredGroups": [6, 9, 27],
+                "mysql": false,
+                "mode": "interval",
+                "time": 120,
+                "group": 10
+            },
+            "clientInfoInChannel": {
+                "status": false, 
+                "mysql": false,
+                "mode": "onClientMoved",
+                "allChannels": [91],
+                "channelId": 91,
+                "sendMessage": [
+                    "Informacje o tobie:",
+                    "Twoja nazwa uĹĽytkownika: [b][NICK][/b]",
+                    "Twoja iloĹ›Ä‡ poĹ‚Ä…czeĹ„: [b][CONNECTIONS][/b]",
+                    "Twoja wersja klienta: [b][VERSION][/b]",
+                    "Twoja platforma: [b][PLATFORM][/b]",
+                    "TwĂłj kraj: [b][COUNTRY][/b]",
+                    "Twoje unikalne ID: [b][UID][/b]",
+                    "Twoje database ID: [b][DBID][/b]",
+                    "DoĹ‚Ä…czyĹ‚eĹ› do nas: [b][FIRST_JOIN][/b]",
+                    "TwĂłj adres IP: [b][IPADRESS][/b]"
+                ],
+                "kickMsg": "Informacje zostaĹ‚y wysĹ‚ane! *SprawdĹş wiadomoĹ›Ä‡ prywatnÄ…!*"
+            },
+            "welcomeMessage": {
+                "status": true, 
+                "mysql": false,
+                "mode": "onClientJoin",
+                "ignoredGroups": [],
+                "sendMessage": [
+                    " Witaj [b][NICK][/b] na serwerze [b]TS3.uOszukisty.pl[/b]",
+                    " ",
+                    " Informacje o serwerze:",
+                    "  Nazwa serwera: [b][SERVER_NAME][/b]",
+                    "  Wersja serwera: [b][SERVER_VERSION][/b]",
+                    "  UĹĽytkownicy online: [b][ONLINE]/[MAX][/b]",
+                    "  Platforma serwera: [b][PLATFORM][/b]",
+                    "  Uptime serwera: [b][UPTIME][/b]",
+                    " Informacje o tobie:",
+                    "  TwĂłj nick: [b][NICKNAME][/b]",
+                    "  Twoje database ID: [b][DBID][/b]",
+                    "  Twoje unikalne ID: [b][UID][/b]",
+                    "  Twoja wersja klienta: [b][CLIENT_VERSION][/b]",
+                    "  TwĂłj kraj: [b][COUNTRY][/b]",
+                    " ",
+                    " Ĺ»yczymy mile spÄ™dzonego czasu na naszym serwerze ;)"
+                ]
+            },
+            "tops": {
+                "status": false,
+                "interval": 180000,
+                "mysql": true,
+                "mode": "interval",
+                "ignoreGroups": [20,21],
+                "topIdleTime": {
+                    "channelId": 295,
+                    "status": false,
+                    "records": 20
+                },
+                "topConnections": {
+                    "channelId": 292,
+                    "status": false,
+                    "records": 20
+                },
+                "topConnectionTime": {
+                    "channelId": 293,
+                    "status": false,
+                    "records": 20
+                },
+                "topTimeSpent": {
+                    "channelId": 294,
+                    "status": false,
+                    "records": 20
+                },
+                "topHighLevel": {
+                    "channelId": 294,
+                    "status": false,
+                    "records": 20
+                }
+            },
+            "logAddRanks": {
+                "status": false,
+                "interval": 10000,
+                "mysql": true,
+                "mode": "interval",
+                "groups": [41,42,43,44,45,215,216,218,73,72,74,75,24,25,26,27,28,29],
+                "limit": 20,
+                "channelid": 252
+            },
+            "logRemoveRanks": {
+                "status": false,
+                "interval": 10000,
+                "mysql": true,
+                "mode": "interval",
+                "groups": [41,42,43,44,45,215,216,218,73,72,74,75,24,25,26,27,28,29],
+                "limit": 20,
+                "channelid": 7944
+            },
+            "newUsersTodaySave": {
+                "status": false,
+                "mysql": true,
+                "mode": "onClientJoin"
+            },
+            "newUsersTodayChannelEdit": {
+                "status": false,
+                "interval": 3000,
+                "mysql": true,
+                "mode": "interval",
+                "channelId": 117,
+                "records": 30,
+                "channelName": "[cspacer]Â·Â» NOWYCH DZISIAJ: [COUNT] Â«Â· "
+            },
+            "pwAll": {
+                "status": true,
+                "mysql": false,
+                "mode": "commandSystem",
+                "allowedGroups": [6]
+            },
+            "pokeAll": {
+                "status": true,
+                "mysql": false,
+                "mode": "commandSystem",
+                "allowedGroups": [6]
+            },
+            "meeting": {
+                "status": true,
+                "mysql": false,
+                "mode": "commandSystem",
+                "allowedGroups": [6],
+                "adminGroups": [6, 9, 27],
+                "meetingChannel": 297
+            },
+            "help": {
+                "status": true,
+                "mysql": false,
+                "mode": "commandSystem",
+                "allowedGroups": [6]
+            },
+            "groupsProtection": {
+                "status": false,
+                "mysql": false,
+                "interval": 1000,
+                "mode": "interval",
+                "groups": {
+                    "86": {
+                        "dbids": [12],
+                        "mode": "kick",
+                        "banTime": "1",
+                        "reason": "Nie moĹĽesz posiadaÄ‡ tej grupy!"
+                    },
+                    "9": {
+                        "dbids": [7],
+                        "mode": "kick",
+                        "banTime": "1",
+                        "reason": "Nie moĹĽesz posiadaÄ‡ tej grupy!"
+                    },
+					"215": {
+                        "dbids": [235,57],
+                        "mode": "kick",
+                        "banTime": "1",
+                        "reason": "Nie moĹĽesz posiadaÄ‡ tej grupy!"
+                    },
+					"6": {
+                        "dbids": [11],
+                        "mode": "kick",
+                        "banTime": "1",
+                        "reason": "Nie moĹĽesz posiadaÄ‡ tej grupy!"
+                    },
+					"88": {
+                        "dbids": [],
+                        "mode": "kick",
+                        "banTime": "1",
+                        "reason": "Nie moĹĽesz posiadaÄ‡ tej grupy!"
+                    },
+					"89": {
+                        "dbids": [43,8],
+                        "mode": "kick",
+                        "banTime": "1",
+                        "reason": "Nie moĹĽesz posiadaÄ‡ tej grupy!"
+                    },
+					"155": {
+                        "dbids": [230],
+                        "mode": "kick",
+                        "banTime": "1",
+                        "reason": "Nie moĹĽesz posiadaÄ‡ tej grupy!"
+                    },
+					"82": {
+                        "dbids": [14],
+                        "mode": "kick",
+                        "banTime": "1",
+                        "reason": "Nie moĹĽesz posiadaÄ‡ tej grupy!"
+                    }
+                }
+            },
+            "tempGroup": {
+                "status": false,
+                "mysql": true,
+                "mode": "commandSystem",
+                "allowedGroups": [65],
+                "addGroupMsg": "OtrzymaĹ‚eĹ› tymczasowÄ… grupÄ™ [b][GROUP_NAME][/b] do: [DATE]"
+            },
+            "tempGroupChecker": {
+                "status": false,
+                "mysql": true,
+                "mode": "interval",
+                "interval": 1000,
+                "groupExpireMsg": "Grupa [b][GROUP_NAME][/b] wygasĹ‚a."
+            },
+            "sectorStats": {
+                "status": false,
+                "mysql": true,
+                "interval": 30000,
+                "mode": "interval",
+                "allSectors": ["PREMIUM", "SP", "GS", "SP2"],
+                "description": {
+                    "top": "[center][hr][size=15]\n[b]Statystyki strefy [SECTOR][/size]\n[size=12][b]OgĂłĹ‚em w sektorze: [color=darkgreen][ONLINE_SECTOR_USERS][/color]/[color=darkblue][ALL_SECTOR_USERS][/color][/b][/size]\n[hr]",
+                    "list": "\n[b][size=12][ [TAG] ][/size]\nâ—Ź Lider: [color=darkred][OWNER][/color]\nâ—Ź Status: [color=darkgreen][ONLINE][/color]/[color=darkblue][ALL][/color]\n[hr]",
+                    "footer": "[/center][right][b]Wygenerowano przez: [color=blue]LBots @Automatic[/color][/right]"
+                },
+                "sectors": {
+                    "SP": "190",
+                    "PREMIUM": "250",
+                    "GS": "7465",
+                    "SP2": "260"
+                }
+            },
+            "helpCenter": {
+                "status": false,
+                "mysql": false,
+                "interval": 5000,
+                "mode": "interval",
+                "channels": {
+                    "3532": {
+                        "openingTime": "13:00",
+                        "openChannelData": {
+                            "channel_name": "Centrum Pomocy [ON]",
+                            "channel_flag_maxclients_unlimited": 1,
+                            "channel_flag_maxfamilyclients_unlimited": 1,
+                            "channel_maxclients": 1,
+                            "channel_maxfamilyclients": 1
+                        },
+                        "closingTime": "21:00",
+                        "closeChannelData": {
+                            "channel_name": "Centrum Pomocy [OFF]",
+                            "channel_flag_maxclients_unlimited": 0,
+                            "channel_flag_maxfamilyclients_unlimited": 0,
+                            "channel_maxclients": 0,
+                            "channel_maxfamilyclients": 0
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "2": {
+        "ts3": {
+            "host": "ts3.uoszukisty.pl", 
+            "queryport": 10011,
+            "serverport": 9987,
+            "username": "serveradmin",
+            "password": "TwojaStara123",
+            "nickname": "Checker",
+            "keepAlive": true,
+            "channelId": 1
+        },
+
+        "functions": {
+            "achivementsTimeSpent": {
+                "status": false,
+                "mysql": true,
+                "interval": 2000,
+                "mode": "interval",
+                "additionalGroups": [311],
+                "ignoredGroups": [78, 2, 160],
+                "notifications": true,
+                "notifyMessage": "[b]Gratulacje![/b] OsiÄ…gnÄ…Ĺ‚eĹ› prĂłg [b][HOURS][/b]h.",
+                "groups": {
+                    "312": "25",
+                    "313": "50",
+                    "314": "75"
+                }
+            },
+            "achivementsConnections": {
+                "status": false,
+                "mysql": true,
+                "interval": 5000,
+                "mode": "interval",
+                "additionalGroups": [],
+                "ignoredGroups": [78, 2, 160],
+                "notifications": true,
+                "notifyMessage": "[b]Gratulacje![/b] OsiÄ…gnÄ…Ĺ‚eĹ› prĂłg [b][CONNECTIONS][/b] poĹ‚Ä…czeĹ„.",
+                "groups": {
+                    "182": "5",
+                    "183": "15"
+                }
+            },
+            "groupAfterFirstConnectTime": {
+                "status": false,
+                "mysql": true,
+                "mode": "interval",
+                "interval": 2000,
+                "additionalGroups": [],
+                "notifications": true,
+                "notifyMessage": "[b]Gratulacje![/b] AwansowaĹ‚eĹ› na kolejny poziom! DziÄ™kujemy, ĹĽe jesteĹ› z nami od: [b][TIME_AFTER_FIRST_CONNECT][/b].",
+                "groups": {
+                    "182": 3,
+                    "183": 10,
+                    "184": 20
+
+                }
+            },
+            "clientLevels": {
+                "status": false,
+                "mysql": true,
+                "interval": 5000,
+                "mode": "interval",
+                "additionalGroups": [],
+                "ignoredGroups": [78, 2, 160],
+                "notifications": true,
+                "notifyMessage": "[b]Gratulacje![/b] AwansowaĹ‚eĹ› z poziomu [b][LEVEL_1][/b] na [b][LEVEL_2][/b], nastÄ™pny poziom przy osiÄ…gniÄ™ciu progu [b][NEXT_LEVEL_HOUR] godzin[/b] spÄ™dzonego czasu.",
+                "levels": {
+                    "261": "1",
+                    "262": "10",
+                    "263": "30",
+                    "264": "50",
+                    "265": "70",
+                    "266": "100",
+                    "267": "130",
+                    "268": "170",
+                    "269": "250",
+                    "270": "500"
+                }
+            },
+            "tempChannelInfo": {
+                "status": false,
+                "mysql": true,
+                "mode": "onChannelCreated",
+                "sendMode": "poke",
+                "messages": {
+                    "ifClientNotHavePrivateChannel": [
+                        "ZachÄ™camy do zaĹ‚oĹĽenia kanaĹ‚u prywatnego,",
+                        "ktĂłry nie zostanie usuniÄ™ty dopĂłki bÄ™dziesz na niego wchodziĹ‚.",
+                        "KanaĹ‚ prywatny posiada [b]2 podkanaĹ‚y[/b].",
+                        "Jego termin waĹĽnoĹ›ci wynosi [b][i]5 dni[/b]",
+                        "Przy kaĹĽdym wejĹ›ciu na kanaĹ‚ termin waĹĽnoĹ›ci siÄ™ resetuje!",
+                        "Aby zaĹ‚oĹĽyÄ‡ swĂłj kanaĹ‚ prywatny Wystarczy, ze wejdziesz na:",
+                        "[url=channelid://95]Â· UtwĂłrz KanaĹ‚ Prywatny[/url]"
+                    ],
+                    "ifClientHavePrivateChannel": [
+                        "ZauwaĹĽyliĹ›my, ĹĽe stworzyĹ‚eĹ› kanaĹ‚ tymczasowy,",
+                        "PamiÄ™taj, ĹĽe posiadasz kanaĹ‚ prywatny.",
+                        "Aby wejĹ›Ä‡ na swĂłj kanaĹ‚ kliknij [url=channelid://[CID]]Tutaj![/url]"
+                    ]
+                }
+            },
+            "urlGuard": {
+                "status": false,
+                "mysql": true,
+                "mode": "onChannelEdit",
+                "generateUrlList": true,
+                "channelId": 64,
+                "sendMessageToGroup": true,
+                "groupId": 242,
+                "urlWhitelist": [
+                    "i.imgur.com"
+                ]
+            },
+            "checkUserPerms": {
+                "status": false, 
+                "mysql": false,
+                "mode": "interval",
+                "interval": 1000,
+                "adminGroups": [9,11],
+                "ignoredPerms": [
+                    "i_client_talk_power"
+                ]
+                
+            },
+            "serverName": {
+                "status": true,
+                "mysql": false,
+                "mode": "onClientConnectOrDisconnect",
+                "name": "â†’ Ts3.uOszukisty Uzytkownikow Online: [ONLINE]/[MAX]",
+                "ignoredGroups": [20,21]
+            },
+            "recordOnline": {
+                "status": true, 
+                "mysql": true,
+                "mode": "onClientJoin",
+                "channelid": 9,
+                "channelName": "[cspacer]Â·Â» REKORD SERWERA: [RECORD] Â«Â· ",
+                "channelDesc": "[center][hr][size=16]Rekord online[/size][hr]\n\nObecny rekord wynosi: [b][RECORD][/b].\n Ustanowiony dnia: [b][DATE][/b]\n O godzinie: [b][HOUR][/b]\n\n[hr]"
+            },
+            "todayOnlineRecord": {
+                "status": false, 
+                "mysql": true,
+                "mode": "onClientJoin",
+                "channelid": 1379,
+                "channelName": "[cspacer]Â·Â» REKORD DNIA: [RECORD] Â«Â· "
+            },
+            "registerChannels": {
+                "status": true,
+                "mysql": false,
+                "mode": "onClientMoved",
+                "allgroups": [10],
+                "allChannels": [5],
+                "channels": {
+                    "5": 10
+                }
+            },
+            "pokeAdmins": {
+                "status": true,
+                "mysql": false,
+                "mode": "onClientMoved",
+                "allChannels": [68],
+                "ignoredGroups": [],
+                "pokeGroups": [6, 9, 27]
+            },
+            "getPrivateChannel": {
+                "status": true,
+                "mysql": true,
+                "mode": "onClientMoved",
+                "section": 307271,
+                "allChannels": [19],
+                "getChannelId": 19,
+                "channelOwnerGroup": 5,
+                "neededGroups": [10],
+                "subChannels": 2,
+                "channelName": "[NUMBER]. [NICK] - Prywatny kanaĹ‚",
+                "channelDesc": ""
+            },
+            "privateChannelsGuard": {
+                "status": true,
+                "interval": 60000,
+                "mysql": true,
+                "mode": "interval",
+                "daysToDelete": 5,
+                "channelsCountStatus": false,
+                "channelsCountCID": 1020,
+                "channelsCountCHName": "[Â»] KanaĹ‚Ăłw prywatnych [COUNT] (OPIS)",
+                "expireChannelsDesc": "Â» [b][CHANNEL_NAME][/b] | za [b][EXPIRE_TIME][/b]",
+                "channelsCountDESC": "[center][hr][size=15]\n[b]KanaĹ‚y prywatne[/size]\n[hr][/center]\n[size=9]IloĹ›Ä‡ kanaĹ‚Ăłw prywatnych: [b][COUNT][/b]\n[hr]\nDziĹ› do usuniÄ™cia:\n[TOMORROW_DELETE]\nJutro do usuniÄ™cia:\n[DAY_AFTER_TOMORROW_DELETE]",
+                "channelsCountFooter": "\n[hr][/size][right][b]Wygenerowano przez: [color=blue]LBots @Automatic[/color][/right]"
+            },
+            "checkPrivateDesc": {
+                "status": true,
+                "mysql": true,
+                "mode": "onChannelEdit",
+                "channelDesc": "[center][hr][size=15]\n[b]KanaĹ‚ Prywatny #[NUMBER][/size]\n[hr][/center]\n[size=9]WĹ‚aĹ›ciciel kanaĹ‚u: [b][NICK][/b]\n[hr]\nData zaĹ‚oĹĽenia kanaĹ‚u: [b][CREATE_DATE][/b]\nKanaĹ‚ wygaĹ›nie za: [b][EXPIRE_DATE][/b]\n[hr][/size][right][b]Wygenerowano przez: [color=blue]LBots @Automatic[/color][/right]"
+            },
+            "checkPrivateChannels": {
+                "status": true,
+                "interval": 5000,
+                "mysql": true,
+                "mode": "interval",
+                "section": 307271,
+                "blockedPharse": ["CEO", "ŕ¦Żŕ¦Ľŕ¦¦ŕ¦¤ŕ¦śŕ¦ ŕ¦“ŕ¦¤ ŕ¦šŕ¦“ŕ¦ŕ¦ˇŕ¦¦ŕ¦¶ŕ¦Źŕ¦¤ŕ¦¦", "ď·˝","â—¦ CEO â—¦","â—¦ vCEO â—¦","â—¦ Query  â—¦","â—¦ RooT â—¦","â—¦ HSA â—¦","â—¦ SSA â—¦","â—¦ SA â—¦","â—¦ NA â—¦","â—¦ TA â—¦","ę§‚","psie","kurwo","ssie","sci.ek","kur.wa","sciek",".pl",".eu",".net",".com","huj","cipa","pizda","kutas","hitler","chuj","[QUERY]","[ROOT]","[HSA]","[SSA]","[SA]","[jSA]","[JSA]","[tSA]","[TSA]","[NA]","WĹ‚aĹ›ciciel","tsforum", "jebac", "jebaÄ‡"]
+            },
+            "nickProtection": {
+                "status": false,
+                "interval": 1000,
+                "mysql": false,
+                "mode": "interval",
+                "ignoredGroups": [9,86,155,215,6,88,89,90,91,92,94,20],
+                "blockedPharse": ["CEO", "ŕ¦Żŕ¦Ľŕ¦¦ŕ¦¤ŕ¦śŕ¦ ŕ¦“ŕ¦¤ ŕ¦šŕ¦“ŕ¦ŕ¦ˇŕ¦¦ŕ¦¶ŕ¦Źŕ¦¤ŕ¦¦", "ď·˝","â—¦ CEO â—¦","â—¦ vCEO â—¦","â—¦ Query  â—¦","â—¦ RooT â—¦","â—¦ HSA â—¦","â—¦ SSA â—¦","â—¦ SA â—¦","â—¦ NA â—¦","â—¦ TA â—¦","ę§‚","psie","kurwo","ssie","sci.ek","kur.wa","sciek",".pl",".eu",".net",".com","huj","cipa","pizda","kutas","hitler","chuj","[QUERY]","[ROOT]","[HSA]","[SSA]","[SA]","[jSA]","[JSA]","[tSA]","[TSA]","[NA]","WĹ‚aĹ›ciciel","tsforum"],
+                "kickMessage": "TwĂłj nick zawiera niedozwolonÄ… frazÄ™ ( [PHARSE] )"
+            },
+            "addRankByIp": {
+                "status": false,
+                "mysql": false,
+                "mode": "onClientJoin",
+                "ranks": {
+                    "11": ["5.173.233.21"]
+                }
+            },
+            "ipLimiter": {
+                "status": false,
+                "mysql": false,
+                "mode": "onClientJoin",
+                "ignoreGroups": [9,86,155,215,6,88,89,90,91,92,94,20],
+                "ifUserHaveMoreAcc": {
+                    "action": "kick",
+                    "reason": "Nie moĹĽesz mieÄ‡ wiÄ™cej niĹĽ 2 konta na tym samym adresie IP!",
+                    "limit": 2
+                }
+            },
+            "antyVPN": {
+                "status": false,
+                "mysql": true,
+                "mode": "onClientJoin",
+                "ignoredIps": ["2001:41d0:602:2842::"],
+                "ignoreGroups": [9,86,155,215,6,88,89,90,91,92,94,20,65],
+                "email": "policja@wp.pl",
+                "kickReason": "Maskowanie adresĂłw IP na tym serwerze jest zabronione!"
+            },
+            "sortGuildChannels": {
+                "status": false,
+                "interval" : 2500,
+                "mysql": true,
+                "mode": "interval",
+                "sectorTypes": ["PREMIUM"]
+            },
+            "blockRecording": {
+                "status": false,
+                "mysql": false,
+                "mode": "interval",
+                "interval": 1000,
+                "ignoredGroups": [9],
+                "onRecording": {
+                    "mode": "kick",
+                    "reason": "Nagrywanie jest zabronione!",
+                    "banTime": 1
+                }
+            },
+            "logEditedChannels": {
+                "status": false,
+                "mysql": true,
+                "editPrivateChannels": false,
+                "mode": "onChannelEdit",
+                "ignoredGroups": [],
+                "splitAfter": "[hr][center][b]Ostatnia edycja kanaĹ‚u[/b]",
+                "template": "[hr][center][b]Ostatnia edycja kanaĹ‚u[/b]\nUĹĽytkownik: [USER]\nEdytowano: [DATE]\nUstawiony opis: [URL][HASTEBIN][/URL][/center][hr]"
+            },
+            "groupsLimiter": {
+                "status": true,
+                "mysql": false,
+                "mode": "interval",
+                "interval": 1000,
+                "limits": [
+                    {
+                        "groups": [13, 14, 15, 16, 17, 18, 28, 29, 30, 31, 32],
+                        "limit": 4,
+                        "message": "MoĹĽesz posiadaÄ‡ maksymalnie 4 grupy Specjalne, zabrano grupÄ™: [b][DELGROUP][/b]."
+                    }
+                ]
+            }
+        }
+    },
+    "3": {
+        "ts3": {
+            "host": "ts3.uoszukisty", 
+            "queryport": 10011,
+            "serverport": 9987,
+            "username": "serveradmin",
+            "password": "TwojaStara123",
+            "nickname": "guildManager",
+            "keepAlive": true,
+            "channelId": 1
+        },
+
+        "functions": {
+            "checkDeletedGuilds": {
+                "status": false,
+                "mysql": true,
+                "mode": "onChannelDelete",
+                "channelId": 296
+            },
+            "addRanks":{
+  			 "status":true,
+   			"mysql":true,
+   			"mode":"onClientMoved",
+  			 "allChannels": [40, 41, 42, 43, 44, 45, 117, 118, 119, 120, 121]
+      			"addRanks"
+            ],
+   				"channels":{
+      			"40":{
+        			 "groupid":18,
+                     "afterAdd":"mainchannel" 
+                     
+      }
+      
+   }
+            },
+            "getPremiumChannel": {
+                "status": false,
+                "mysql": true,
+                "mode": "onClientMoved",
+                "allChannels": [202],
+                "getChannelId": 202,
+                "sectorTypes": ["KLAN","STREFA"],
+                "sectors": {
+                    "KLAN": {
+                        "groupCopy": 52, 
+                        "section": 1031,
+                        "channelOwnerGroup": 5,
+                        "channels": [
+                            {
+                                "channelName": "[cspacer]Â» [TAG] Â«"
+                            },
+                            {
+                                "channelName": "[cspacer[TAG]]Â» Online: 0/0 Â«",
+                                "type": "guildOnline"
+                            },
+                            {
+                                "channelName": "[cspacer[TAG]]Â» Przystanek Â«",
+                                "type": "teleport"
+                            },
+                            {
+                                "channelName": "[cspacer[TAG]]Â» ZarzÄ…dzanie Klanem Â«",
+                                "type": "settings",
+                                "subChannels": [
+                                    {
+                                        "channelName": "Nadaj / Zdejmij rangÄ™",
+                                        "type": "rankChanger"
+                                    }
+                                ]
+                            },
+                            
+                            {
+                                "channelName": "[cspacer[TAG]]Â» KanaĹ‚y Â«",
+                                "subChannels": [
+                                    {
+                                        "channelName": "1. [TAG] PodkanaĹ‚"
+                                    },
+                                    {
+                                        "channelName": "2. [TAG] PodkanaĹ‚"
+                                    },
+                                    {
+                                        "channelName": "3. [TAG] PodkanaĹ‚"
+                                    },
+                                    {
+                                        "channelName": "4. [TAG] PodkanaĹ‚"
+                                    },
+                                    {
+                                        "channelName": "5. [TAG] PodkanaĹ‚"
+                                    },
+                                    {
+                                        "channelName": "6. [TAG] PodkanaĹ‚",
+                                        "open": true,
+                                        "type": "autopoke"
+                                    }
+                                    
+                                ]
+                            },
+                            
+                            {
+                                "channelName": "[*spacer[TAG]]ďż˝"
+                            }
+                        ]
+                    },
+                        "STREFA": {
+                        "groupCopy": 52, 
+                        "section": 1321,
+                        "channelOwnerGroup": 5,
+                        "channels": [
+                            {
+                                "channelName": "[*spacer[TAG]1]..."    
+                            },
+                            {
+                                "type": "bigNumber"    
+                            },
+                            {
+                                "channelName": "[*spacer[TAG]2]..."    
+                            },
+                            {
+                                "channelName": "[cspacer]Â» [TAG] Â«"
+                            },
+                            {
+                                "channelName": "[cspacer[TAG]]Â» Online: 0/0 Â«",
+                                "type": "guildOnline"
+                            },
+                            {
+                                "channelName": "[cspacer[TAG]]Â» Przystanek Â«",
+                                "type": "teleport"
+                            },
+                            {
+                                "channelName": "[cspacer[TAG]]Â» ZarzÄ…dzanie gildiÄ… Â«",
+                                "type": "settings",
+                                "subChannels": [
+                                    {
+                                        "channelName": "Nadaj / Zdejmij rangÄ™",
+                                        "type": "rankChanger"
+                                    }
+                                ]
+                            },
+                            {
+                                "channelName": "[cspacer[TAG]]Â» LiderĂłwka Â«",
+                                "subChannels": [
+                                    {
+                                        "channelName": "1. [TAG] PodkanaĹ‚"
+                                    },
+                                    {
+                                        "channelName": "2. [TAG] PodkanaĹ‚"
+                                    },
+                                    {
+                                        "channelName": "3. [TAG] PodkanaĹ‚"
+                                    }
+                                ]
+                            },
+                            {
+                                "channelName": "[cspacer[TAG]]Â» KanaĹ‚y Â«",
+                                "subChannels": [
+                                    {
+                                        "channelName": "1. [TAG] PodkanaĹ‚"
+                                    },
+                                    {
+                                        "channelName": "2. [TAG] PodkanaĹ‚"
+                                    },
+                                    {
+                                        "channelName": "3. [TAG] PodkanaĹ‚"
+                                    },
+                                    {
+                                        "channelName": "4. [TAG] PodkanaĹ‚"
+                                    },
+                                    {
+                                        "channelName": "5. [TAG] PodkanaĹ‚"
+                                    },
+                                    {
+                                        "channelName": "6. [TAG] PodkanaĹ‚"
+                                    },
+                                    {
+                                        "channelName": "7. [TAG] PodkanaĹ‚"
+                                    },
+                                    {
+                                        "channelName": "8. [TAG] PodkanaĹ‚"
+                                    }
+                                ]
+                            },
+                            {
+                                "channelName": "[cspacer[TAG]]Â» Rekrutacja Â«",
+                                "subChannels": [
+                                    {
+                                        "channelName": "1. [TAG] PodkanaĹ‚"
+                                    },
+                                    {
+                                        "channelName": "2. [TAG] PodkanaĹ‚"
+                                    },
+                                    {
+                                        "channelName": "3. [TAG] PodkanaĹ‚"
+                                    },
+                                    {
+                                        "channelName": "4. [TAG] PodkanaĹ‚",
+                                        "open": true,
+                                        "type": "autopoke"
+                                    }
+                                ]
+                            },
+                            {
+                                "channelName": "[*spacer[TAG]]ďż˝"
+                            }
+                        ]
+                    }					
+                }
+            },
+            "guildInstanceKeepAlive": {
+                "status": true,
+                "mysql": false,
+                "interval": 120000,
+                "mode": "interval"
+            },
+            "manageChannel": {
+                "status": true,
+                "mysql": true,
+                "mode": "onClientMoved",
+                "allChannels": ["guildManager"],
+                "welcomeMessage": [
+                    "Witaj [b][CLIENT_NICKNAME][/b], nazywam siÄ™ @guildManager",
+                    "Jestem tutaj aby uĹ‚atwiÄ‡ Ci utrzymywanie porzÄ…dku w twojej strefie gildyjnej ;)",
+                    "ListÄ™ akcji, ktĂłre mogÄ™ dla Ciebie wykonaÄ‡ znajdziesz pod komendÄ… [b]!pomoc[/b]"
+                ]
+            },
+            "removeGroups": {
+                "status": true,
+                "mysql": true,
+                "mode": "onClientMoved",
+                "allChannels": [28],
+                "channels": {
+                    "28": ["guild"]
+                }
+            },
+            "guildHelp": {
+                "status": true,
+                "mysql": true,
+                "mode": "commandSystem",
+                "command": "!pomoc",
+                "messages": [
+                    "DostÄ™pne komendy:",
+                    "[b]!tag [TAG][/b] - Pozwala zmieniÄ‡ tag gildii.",
+                    "[b]!meet[/b] - Tworzy zbiĂłrkÄ™ wszystkich uĹĽytkownikĂłw.",
+                    "[b]!clearall[/b] - CzyĹ›ci wszystkich uĹĽytkownikĂłw z grupy serwerowej oraz wszystkie grupy kanaĹ‚owe.",
+                    "[b]!clearall channel[/b] - CzyĹ›ci wszystkie grupy kanaĹ‚owe.",
+                    "[b]!clearall server[/b] - CzyĹ›ci wszystkich uĹĽytkownikĂłw z grupy serwerowej",
+                    "[b]!mass pw [WIADOMOĹšÄ†][/b] - WysyĹ‚a wiadomoĹ›Ä‡ prywatnÄ… do kaĹĽdego uĹĽytkownika online.",
+                    "[b]!mass poke [WIADOMOĹšÄ†][/b] - WysyĹ‚a zaczepkÄ™ do kaĹĽdego uĹĽytkownika online.",
+                    "[b]!list[/b] - WyĹ›wietla listÄ™ wszystkich uĹĽytkownikĂłw w gildii wraz z ich DatabaseID.",
+                    "[b]!wyrzuc [DBID][/b] - Pozwala na wyrzucenie wybranego uĹĽytkownika z twojej gildii ( [b]DatabaseID znajdziesz pod komendÄ… !list[/b] )",
+                    "[b]!reset[/b] - Pozwala na wyczyszczenie wybranej grupy kanaĹ‚owej w caĹ‚ej strefie.",
+                    "[b]!autopoke on[/b] - WĹ‚Ä…cza funkcjÄ™ wiadomoĹ›ci o tym, ĹĽe ktoĹ› doĹ‚aczyĹ‚ na kanaĹ‚ rekrutacji",
+                    "[b]!autopoke off[/b]  - WyĹ‚Ä…cza funkcjÄ™ wiadomoĹ›ci o tym, ĹĽe ktoĹ› doĹ‚aczyĹ‚ na kanaĹ‚ rekrutacji",
+                    "[b]!autopoke add [DBID][/b] - Dodaje uĹĽytkownika, ktĂłry bÄ™dzie dostawaĹ‚ informacjÄ™ o tym, ĹĽe ktoĹ› doĹ‚Ä…czyĹ‚ na kanaĹ‚ rekrutacji.",
+                    "[b]!autopoke list[/b] - WyĹ›wietla listÄ™ uĹĽytkownikĂłw, ktĂłrzy otrzymujÄ… informacjÄ™ o tym, ĹĽe ktoĹ› doĹ‚Ä…czyĹ‚ na kanaĹ‚ rekrutacji.",
+                    "[b]!autopoke remove [DBID][/b] - Usuwa wybranego uĹĽytkownika z listy osĂłb, ktĂłreotrzymujÄ… informacjÄ™ o tym, ĹĽe ktoĹ› doĹ‚Ä…czyĹ‚ na kanaĹ‚ rekrutacji.",
+                    "[b]!rekru on[/b] - WĹ‚Ä…cza funkcjÄ™ informowania o tym, ĹĽe ktoĹ› szuka gildii.",
+                    "[b]!rekru off[/b]  - WyĹ‚Ä…cza funkcjÄ™ informowania o tym, ĹĽe ktoĹ› szuka gildii.",
+                    "[b]!rekru add [DBID][/b] - Dodaje uĹĽytkownika, ktĂłry bÄ™dzie dostawaĹ‚ informacjÄ™ o tym, ĹĽe ktoĹ› szuka gildii.",
+                    "[b]!rekru list[/b] - WyĹ›wietla listÄ™ uĹĽytkownikĂłw, ktĂłrzy otrzymujÄ… informacjÄ™ o tym, ĹĽe ktoĹ› szuka gildii.",
+                    "[b]!rekru remove [DBID][/b] - Usuwa wybranego uĹĽytkownika z listy osĂłb, ktĂłre otrzymujÄ… informacjÄ™ o tym, ĹĽe ktoĹ› szuka gildii.",
+                    "[b]!musicacces add [DBID][/b] - Nadaje wybranemu uĹĽytownikowi dostÄ™p do botĂłw muzycznych.",
+                    "[b]!musicacces remove [DBID][/b] - Zabiera wybranemu uĹĽytownikowi dostÄ™p do botĂłw muzycznych."
+
+                ]
+            },
+            "tagEditor": {
+                "status": true,
+                "mysql": true,
+                "mode": "commandSystem",
+                "command": "!tag",
+                "tagFormat": "[TAG]",
+                "msgSuccess": "Zmieniono tag gildii na: [NEW_TAG]",
+                "msgMaxLetters": "Tag moĹĽe zawieraÄ‡ maksymalnie 6 znakĂłw, twĂłj zawiera: [TAG_LENGTH]",
+                "msgInvalidTag": "Podany tag jest [b]nieprawidĹ‚owy[/b]!"
+            },
+            "guildMeeting": {
+                "status": true,
+                "mysql": true,
+                "mode": "commandSystem",
+                "command": "!meet",
+                "pokeStatus": true,
+                "pokeMessage": "Witaj na zbiĂłrce gildii [b][TAG][/b]",
+                "pokeMutedClient": "Odmutuj siÄ™! ( ZbiĂłrka gildii [b][TAG][/b] trwa )"
+            },
+            "guildClearAll": {
+                "status": true,
+                "mysql": true,
+                "mode": "commandSystem",
+                "command": "!clearall",
+                "guestCgId": 8
+            },
+            "guildMass": {
+                "status": true,
+                "mysql": true,
+                "mode": "commandSystem",
+                "command": "!mass",
+                "commandPw": "!mass pw",
+                "commandPoke": "!mass poke",
+                "guestCgId": 8,
+                "msgFormat": "( [CLIENT_NICKNAME] ) - [MSG]"
+            },
+            "guildList": {
+                "status": true,
+                "mysql": true,
+                "mode": "commandSystem",
+                "command": "!list",
+                "listFormat": "Nick: [b][CLIENT_NICKNAME][/b] | DatabaseID: [b][DBID][/b]"
+            },
+            "guildKick": {
+                "status": true,
+                "mysql": true,
+                "mode": "commandSystem",
+                "command": "!wyrzuc",
+                "msgSuccess": "Wyrzucono uĹĽytkownika: [b][CLIENT_NICKNAME][/b]",
+                "msgUserDoesNotHaveGroup": "Podany uĹĽytkownik nie posiada grupy twojej gildii.",
+                "msgDBIDNotGiven": "Podaj DB uĹĽytkownika, ktĂłry ma zostaÄ‡ wyrzucony z gildii."
+            },
+            "guildReset": {
+                "status": true,
+                "mysql": true,
+                "mode": "commandSystem",
+                "command": "!reset",
+                "groupsToReset": {
+                    "15": "ZaĹ‚oĹĽyciel",
+                    "12": "Lider",
+                    "13": "vLider",
+                    "14": "Mistrz",
+                    "17": "Zaufany czĹ‚onek",
+                    "16": "DostÄ™p kanaĹ‚owy",
+                    "18": "Rekrut",
+                    "19": "Sojusz",
+                    "26": "Zakaz mĂłwienia",
+                    "28": "Zakaz Pisania",
+                    "27": "Blokada Na Kanale"
+                },
+                "msgSuccess": "[b][color=green]PomyĹ›lnie[/color] wyczyszczono grupÄ™ kanaĹ‚owÄ…: [u][CHANNEL_GROUP_NAME][/u]",
+                "msgListPrefix": "[u]Grupa => ID",
+                "msgListFormat": "[CHANNEL_GROUP_NAME] => [GROUP_ID]"
+            },
+            "guildAutoPoke": {
+                "status": true,
+                "mysql": true,
+                "mode": "commandSystem",
+                "command": "!autopoke",
+                "msgUserAddSuccess": "[b][color=darkgreen]PomyĹ›lnie[/color] Dodano uĹĽytkownika o numerze DBID: [u][DBID][/u]",
+                "msgUserRemoveSuccess": "[b][color=darkgreen]PomyĹ›lnie[/color] UsuniÄ™to uĹĽytkownika o numerze DBID: [u][DBID][/u]",
+                "msgFunctionIsCurrentlyOn": "[b]Funkcja AutoPoke jest aktualnie [color=darkgreen]wĹ‚Ä…czona[/color]",
+                "msgFunctionIsCurrentlyOff": "[b]Funkcja AutoPoke jest aktualnie [color=darkred]wyĹ‚Ä…czona[/color]",
+                "msgUserInChannel": "UĹĽytkownik [b][NICK][/b] czeka aktualnie na kanale rekrutacji!",
+                "msgListOfUsers": "[b]Lista DBID, ktĂłre dostajÄ… poke z kanaĹ‚u rekrutacja: [/b][i][LIST][/i]",
+                "msgUserItIsNotInGuild": "Podany uĹĽytkownik nie jest w twojej gildii"
+            },
+            "guildMusicAccess": {
+                "status": true,
+                "mysql": true,
+                "mode": "commandSystem",
+                "command": "!musicaccess",
+                "musicBotAccessGroup": 221,
+                "msgUserAddSuccess": "[b][color=darkgreen]PomyĹ›lnie[/color] Nadano dostÄ™p do botĂłw muzycznych uĹĽytkownikowi o numerze DatabseID: [u][DBID][/u]",
+                "msgUserRemoveSuccess": "[b][color=darkgreen]PomyĹ›lnie[/color] Zabrano dostÄ™p do botĂłw muzycznych uĹĽytkownikowi o numerze DatabseID: [u][DBID][/u]",
+                "msgUserItIsNotInGuild": "Podany uĹĽytkownik nie jest w twojej gildii",
+                "msgDBIDNotGiven": "Podaj poprawne DatabaseID.",
+                "msgInvalidParameter": "Podaj poprawny parametr (add / remove).",
+                "msgUserAlreadyHasGroup": "Podany uĹĽytkownik posiada juĹĽ dostÄ™p do botĂłw muzycznych.",
+                "msgUserNotHaveGroup": "Podany uĹĽytkownik nie posiada dostÄ™pu do botĂłw muzycznych.",
+                "msgUserNotOnline": "Podany uĹĽytkownik nie jest ONLINE."
+            },
+            "guildAutoPokeChecker": {
+                "status": true,
+                "mysql": true,
+                "mode": "onClientMoved",
+                "allChannels": ["guildManager"]
+            },
+            "guildRekruInfo": {
+                "status": true,
+                "mysql": true,
+                "mode": "commandSystem",
+                "command": "!rekru",
+                "msgUserAddSuccess": "[b][color=darkgreen]PomyĹ›lnie[/color] Dodano uĹĽytkownika o numerze DBID: [u][DBID][/u]",
+                "msgUserRemoveSuccess": "[b][color=darkgreen]PomyĹ›lnie[/color] UsuniÄ™to uĹĽytkownika o numerze DBID: [u][DBID][/u]",
+                "msgFunctionIsCurrentlyOn": "[b]Funkcja RekruInfo jest aktualnie [color=darkgreen]wĹ‚Ä…czona[/color]",
+                "msgFunctionIsCurrentlyOff": "[b]Funkcja RekruInfo jest aktualnie [color=darkred]wyĹ‚Ä…czona[/color]",
+                "msgUserInChannel": "UĹĽytkownik [b][NICK][/b] poszukuje gildii! Napisz do niego jak najszybciej ;)",
+                "msgListOfUsers": "[b]Lista DBID, ktĂłre dostajÄ… informacjÄ™ o tym, ĹĽe ktoĹ› poszukuje gildii: [/b][i][LIST][/i]",
+                "msgUserItIsNotInGuild": "Podany uĹĽytkownik nie jest w twojej gildii",
+                "msgGuildList": "\n\nWszystkie gildie, ktĂłre prowadzÄ… rekrutacjÄ™ zostaĹ‚y powiadomione o twoim pobycie na tym kanale. \n [b]Lista gildii, ktĂłre aktualnie prowadzÄ… rekrutacjÄ™:[/b]\n[i][LIST][/i]",
+                "msgGuildListIsEmpty": "[b]Przykro nam![/b] Niestety ĹĽadna gildia nie prowadzi rekrutacji!"
+            },
+            "guildRekruInfoChecker": {
+                "status": true,
+                "mysql": true,
+                "mode": "onClientMoved",
+                "allChannels": [1032]
+            }
+        }
+    },
+    "4": {
+        "ts3": {
+            "host": "", 
+            "queryport": 10011,
+            "serverport": 9987,
+            "username": "gildia",
+            "password": "",
+            "nickname": "LBots.pl @ Tramwaj",
+            "keepAlive": true,
+            "channelId": 14
+        },
+
+        "functions": {
+            "moveGroupsToChannel": {
+                "status": true,
+                "mysql": true,
+                "mode": "onClientJoin",
+                "ignoredGroups": [],
+                "sendMessage": {
+                    "status": true,
+                    "messageAfterMove": "\nWitaj, [b][NICK][/b]\nZostaĹ‚eĹ› poprawnie przeniesiony na kanaĹ‚ twojej gildii."
+                },
+                "groupToChannel": {
+                    
+                }
+            }
+        }
+    }
+}
